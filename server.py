@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/generate_emails": {"origins": "*"}}, allow_headers=['Access-Control-Allow-Origin'])
-
+# CORS(app, resources={r"/generate_emails": {"origins": "*", }}, allow_headers=['Access-Control-Allow-Origin'])
+CORS(app)
 # Define your routes and functions as usual
 
 def generate_email_ids(email, first_name, last_name):
