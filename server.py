@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/generate_emails": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/generate_emails": {"origins": "https://findtheirmail.vercel.app/"}})
 
 # Define your routes and functions as usual
 
